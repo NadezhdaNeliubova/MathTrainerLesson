@@ -13,6 +13,7 @@
 		9161EAAA2A5CF0CF00DF5AEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9161EAA82A5CF0CF00DF5AEA /* Main.storyboard */; };
 		9161EAAC2A5CF0D000DF5AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9161EAAB2A5CF0D000DF5AEA /* Assets.xcassets */; };
 		9161EAAF2A5CF0D000DF5AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9161EAAD2A5CF0D000DF5AEA /* LaunchScreen.storyboard */; };
+		9161EAB72A5D1A2000DF5AEA /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161EAB62A5D1A2000DF5AEA /* TrainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9161EAAB2A5CF0D000DF5AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9161EAAE2A5CF0D000DF5AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9161EAB02A5CF0D000DF5AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9161EAB62A5D1A2000DF5AEA /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9161EAA22A5CF0CF00DF5AEA /* AppDelegate.swift */,
 				9161EAA42A5CF0CF00DF5AEA /* SceneDelegate.swift */,
 				9161EAA62A5CF0CF00DF5AEA /* ViewController.swift */,
+				9161EAB62A5D1A2000DF5AEA /* TrainViewController.swift */,
 				9161EAA82A5CF0CF00DF5AEA /* Main.storyboard */,
 				9161EAAB2A5CF0D000DF5AEA /* Assets.xcassets */,
 				9161EAAD2A5CF0D000DF5AEA /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9161EAA72A5CF0CF00DF5AEA /* ViewController.swift in Sources */,
+				9161EAB72A5D1A2000DF5AEA /* TrainViewController.swift in Sources */,
 				9161EAA32A5CF0CF00DF5AEA /* AppDelegate.swift in Sources */,
 				9161EAA52A5CF0CF00DF5AEA /* SceneDelegate.swift in Sources */,
 			);
@@ -292,8 +296,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +304,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nadezhda-Neliubova.MathTrainerLesson";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,8 +325,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +333,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nadezhda-Neliubova.MathTrainerLesson";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
