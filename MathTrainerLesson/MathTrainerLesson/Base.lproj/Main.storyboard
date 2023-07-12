@@ -236,9 +236,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AA-6J-YD2">
-                                <rect key="frame" x="50" y="50" width="62" height="35"/>
+                                <rect key="frame" x="50" y="50" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Huh-au-QWP"/>
+                                    <constraint firstAttribute="width" constant="50" id="vdj-5B-g8I"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Back"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Back">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="10"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="4F4-Kr-vme" kind="unwind" unwindAction="unwindActionWithUnwindSegue:" id="UTX-gz-sl4"/>
                                 </connections>
@@ -306,6 +319,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RkH-2P-OmT"/>
+                    <connections>
+                        <outletCollection property="buttonsCollection" destination="dol-x0-nqC" collectionClass="NSMutableArray" id="EVY-rF-XXN"/>
+                        <outletCollection property="buttonsCollection" destination="xWU-tf-49o" collectionClass="NSMutableArray" id="iIx-G6-vVS"/>
+                        <outletCollection property="buttonsCollection" destination="dol-x0-nqC" collectionClass="NSMutableArray" id="eUh-ai-wHU"/>
+                        <outletCollection property="buttonsCollection" destination="dol-x0-nqC" collectionClass="NSMutableArray" id="era-UL-ZWA"/>
+                        <outletCollection property="buttonCollection" destination="dol-x0-nqC" collectionClass="NSMutableArray" id="ufP-cr-c7J"/>
+                        <outletCollection property="buttonCollection" destination="xWU-tf-49o" collectionClass="NSMutableArray" id="iPR-aP-Fay"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OhN-cj-IwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4F4-Kr-vme" userLabel="Exit" sceneMemberID="exit"/>
