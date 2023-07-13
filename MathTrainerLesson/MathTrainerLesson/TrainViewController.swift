@@ -9,7 +9,11 @@ import Foundation
 import UIKit
 
 final class TrainViewController: UIViewController {
-    @IBOutlet var secondButtonsCollection: [UIButton]!
+    // MARK: - IBOutlets
+    @IBOutlet weak var leftButton: UIButton!
+    @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var questionLabel: UILabel!
+    
     
     // MARK: - Properties
     var type: MathTypes = .add {
@@ -20,16 +24,13 @@ final class TrainViewController: UIViewController {
 
     // MARK: - Life cycle
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        secondConfigureButtons()
+        configureButtons()
     }
     
     // MARK: - Methods
-    private func secondConfigureButtons() {
+    private func configureButtons() {
         //add shadow
-        secondButtonsCollection.forEach { button in
+        [leftButton, rightButton].forEach { button in
             button.layer.shadowColor = UIColor.darkGray.cgColor
             button.layer.shadowOffset = CGSize(width: 0, height: 2) //положение и длинна тени
             button.layer.shadowOpacity = 0.4 //прозрачность (диапазон от 0 до 1)
