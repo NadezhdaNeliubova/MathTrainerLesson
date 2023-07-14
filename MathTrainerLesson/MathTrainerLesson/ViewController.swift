@@ -31,7 +31,9 @@ class ViewController: UIViewController {
         selectedType = MathTypes(rawValue: sender.tag) ?? .add;    performSegue(withIdentifier: "goToNext", sender: sender)
         
     }
-    @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) { }
+    
+    @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) {
+    }
     
     // MARK: - Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
