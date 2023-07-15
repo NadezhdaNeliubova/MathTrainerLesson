@@ -8,7 +8,7 @@
 import UIKit
 
 enum MathTypes: Int {
-    case add, subtract, multyply, divide
+    case add, subtract, multiply, divide
 }
 
 class ViewController: UIViewController {
@@ -28,10 +28,13 @@ class ViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func buttonsAction(_ sender: UIButton) {
-        selectedType = MathTypes(rawValue: sender.tag) ?? .add;    performSegue(withIdentifier: "goToNext", sender: sender)
+        selectedType = MathTypes(rawValue: sender.tag) ?? .add
+        performSegue(withIdentifier: "goToNext", sender: sender)
         
     }
-    @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) { }
+    
+    @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) {
+    }
     
     // MARK: - Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
