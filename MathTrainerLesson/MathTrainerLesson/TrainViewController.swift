@@ -5,7 +5,6 @@
 //  Created by Nadezhda Neliubova on 11.07.2023.
 //
 
-import Foundation
 import UIKit
 
 final class TrainViewController: UIViewController {
